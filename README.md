@@ -15,7 +15,6 @@
 ## Software rules 
 ### Project structure
 
-- Use `create-react-app` for the boilerplate react app.
 
 - depending on what flow to take
     - Follow the component container pattern, so your two main folders inside the `src` will be the `components` folder that will contain your components and `containers` that will contain container components. *You can read more about container components [here](https://reactpatterns.com/#container-component) or you can ask you team leader about it for more clarity.*
@@ -32,13 +31,17 @@ Your project hierarchy should look something similar to this:
 ```
 .
 ├── src
+	├── Pages
+		├── Homepage
+			├── ProgressBar.jsx
+			├── ProgressBar.scss/css
 	├── components
 		├── ProgressBar
-			├── ProgressBar.js
-			├── ProgressBar.scss
+			├── ProgressBar.jsx
+			├── ProgressBar.scss/css
 	├── containers
 		├── About
-				├── ContactForm.js
+				├── ContactForm.jsx
 				├── About.js
 	├── style
 		├── _variables.scss
