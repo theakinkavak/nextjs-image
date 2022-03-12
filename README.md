@@ -11,7 +11,7 @@
 ## Grid should be 4*4:
 ![alt text](./download.png)
 ## Design Rules
-- Be as Creative as you can having a good UI/UX is import 
+- Be as Creative as you can having a good UI/UX is important 
 ## Software rules 
 ### Project structure
 
