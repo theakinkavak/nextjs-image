@@ -1,0 +1,161 @@
+.container {
+  padding: 0 rem;
+  background-image: linear-gradient(#f74e4e, bisque);
+}
+
+.main {
+  min-height: 100vh;
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.title,
+.description {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 550px;
+  background-color: white;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  perspective: 1000px;
+}
+
+.card {
+  margin: 0.5rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 0.5px solid #eaeaea;
+  border-radius: 15px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 120px;
+  height: 135px;
+  position: relative;
+}
+
+// .card Image {
+//   width: 100%;
+//   display: block;
+//   border: 2px solid #fff;
+// }
+
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+  width: 120px;
+  height: 135px;
+  top: 0px;
+  left: 0px;
+}
+.flipped {
+  transition: all ease-in 0.2s;
+  width: 120px;
+  height: 135px;
+  object-fit: fill;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.3);
+}
+.flipped .front {
+  transform: rotateY(0deg);
+  position: absolute;
+  box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.3);
+}
+
+.flip {
+  transform: rotateY(90deg);
+  position: absolute;
+  transition: all ease-in 0.2s;
+}
+
+.newGameBtn {
+  background-color: #fff;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 25px;
+  border-style: none;
+  cursor: pointer;
+  transition: all ease-out 0.3s;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 4rem;
+  font-weight: bold;
+}
+
+.newGameBtn:hover {
+  transition: all ease-in 0.3s;
+  // width: 12rem;
+  // height: 3.5rem;
+  // padding: 0rem 1rem 1rem 1rem;
+  box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.3);
+}
+.turns {
+  font-size: 1.5rem;
+  padding: 0.4rem;
+  background-color: #f74e4e;
+  border-radius: 25px;
+  margin-left: 0.5rem;
+  text-align: center;
+  box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.3);
+}
+
+.congratz {
+  padding: 0.4rem;
+  background-color: #f74e4e;
+  border-radius: 40px;
+  box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.3);
+  width: 30rem;
+  padding-left: 2rem;
+  margin-left: 2rem;
+}
+
+.turnsNumber {
+  color: snow;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
