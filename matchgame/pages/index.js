@@ -96,7 +96,9 @@ export default function Home() {
         <div>
           <h1 className={styles.title}>Matching Game</h1>
           <div className={styles.grid}>
-            {!won ? (
+            {turns === 25 ? (
+              <h1 className={styles.turns}>You Lost!</h1>
+            ) : !won ? (
               pics.map((pic) => {
                 return (
                   <div key={pic.sid} className={styles.card}>
