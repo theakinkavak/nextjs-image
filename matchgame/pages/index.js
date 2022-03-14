@@ -13,6 +13,7 @@ export default function Home() {
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [isDisabled, setIsDisabled] = useState(false);
+  const [aa, setaa] = useState(false);
 
   //shuffling and adding special id
   function shufflePics() {
