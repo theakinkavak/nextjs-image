@@ -143,7 +143,7 @@ export default function Home() {
               </div>
             )}
             {pics.length >= 1 && !won ? (
-              <h1 className={styles.turns}>{`Turn: ${turns}`}</h1>
+              <h1 className={styles.turns}>{`Turn: ${turns}/25`}</h1>
             ) : null}
           </div>
         </div>
